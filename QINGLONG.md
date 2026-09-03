@@ -79,6 +79,16 @@ npm error Missing script: "qrcodeLogin"
 
 因此推荐创建两个 wrapper 脚本，让青龙任务只调用脚本文件。
 
+> **提示：这两个 wrapper 脚本已随仓库提供在 `local/` 目录下**（`local/kg_qrcode_login.sh` 和 `local/kg_daily_checkin.sh`，即服务器实测可用版本）。新环境部署时直接拷贝到青龙脚本目录并赋予执行权限即可，无需手工创建：
+>
+> ```bash
+> mkdir -p /ql/data/scripts/local
+> cp /ql/data/scripts/kgcheckin-ql-docker/local/*.sh /ql/data/scripts/local/
+> chmod +x /ql/data/scripts/local/kg_*.sh
+> ```
+>
+> 以下原始创建命令保留作为参考。
+
 ### 1. 创建扫码登录脚本
 
 ```bash
