@@ -1,0 +1,26 @@
+# 登录凭据：含真实 token / userid，禁止提交
+data/userinfo.json
+data/*.json
+!data/userinfo.example.json
+
+# 依赖
+node_modules/
+api/node_modules/
+
+# 编辑备份文件
+*.bak
+*.bak_*
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 环境变量
+.env
+*.local
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

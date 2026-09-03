@@ -1,0 +1,9 @@
+# 统一以 LF 存入仓库，避免在青龙(Linux)里 shell 脚本出现 CRLF 报错
+* text=auto eol=lf
+
+# 二进制文件不参与换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
